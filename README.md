@@ -1,5 +1,5 @@
 # 该demo包含hbase hive spark
-# 测试使用的demo，勿喷
+# 测试使用的demo
 
   cn.lwenhao.hbase.TestHbaseSql 为测试HBase，包含删除表、创建表、插入数据、根据rowKey查询、遍历查询
   
