@@ -1,0 +1,32 @@
+spring:
+  main:
+    show_banner: false
+  hadoop:
+    fsUri: hdfs://172.16.100.88:8020
+HBase:
+  nodes: 172.16.100.88
+  maxsize: 500000
+hive:
+  url: jdbc:hive2://172.16.100.88:10000/hive
+  driver-class-name: org.apache.hive.jdbc.HiveDriver
+  type: com.alibaba.druid.pool.DruidDataSource
+  user: root
+  password: root
+  initialSize: 1
+  minIdle: 3
+  maxActive: 20
+  maxWait: 60000
+  timeBetweenEvictionRunsMillis: 60000
+  minEvictableIdleTimeMillis: 30000
+  validationQuery: select 1
+  testWhileIdle: true
+  testOnBorrow: false
+  testOnReturn: false
+  poolPreparedStatements: true
+  maxPoolPreparedStatementPerConnectionSize: 20
+server:
+  port: 8054
+spark:
+  spark-home: .
+  app-name: sparkTestSpark
+  master: local[*]
